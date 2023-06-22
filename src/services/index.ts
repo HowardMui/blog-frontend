@@ -3,7 +3,8 @@ import { ReactElement, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const instance = axios.create({
-  baseURL: "http://ec2-3-83-204-135.compute-1.amazonaws.com:8000",
+  baseURL: "https://howardmui-blog-portfolio.net",
+  // baseURL: "http://localhost:8000",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
