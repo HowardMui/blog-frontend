@@ -1,0 +1,18 @@
+@import "./Colors.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //   font-family: 'Noto Sans', sans-serif;
+  //   color: $text-primary !important;
+  //   background-color: blue;
+}
+
+button.clean-btn {
+  border: unset;
+  background-color: transparent;
+  padding: 0px;
+  box-shadow: unset;
+}
