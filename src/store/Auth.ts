@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-// import { UserLoginPayload } from 'models';
+import { UserLoginPayload } from "models";
 
 // import { AppThunk } from 'store';
 
@@ -34,7 +34,7 @@ const authSlice = createSlice({
       state.loginLoading = false;
       state.loginError = action.payload;
     },
-    setProfile(state, action: PayloadAction<any | null>) {
+    setProfile(state, action: PayloadAction<UserLoginPayload | null>) {
       state.Auth = action.payload;
     },
     reset() {
