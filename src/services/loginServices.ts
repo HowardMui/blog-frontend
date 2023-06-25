@@ -21,7 +21,7 @@ export const userSignin = async (params: { email: string; password: string }) =>
 };
 
 export const userLogout = async () => {
-  const { data } = await Axios.get<any>("/auths/logout");
+  const { data } = await Axios.post<any>("/auths/logout");
   return data;
 };
 
