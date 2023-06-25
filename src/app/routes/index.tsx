@@ -1,16 +1,19 @@
-import { AuthLayout } from "app/layouts";
-
+import { AuthLayout, MainLayout } from "app/layouts";
 import { AuthPage } from "app/pages/AuthPage/Loadable";
 // import { LogoutPage } from "app/pages/AuthPage/LogoutPage";
 import { HomePage } from "app/pages/HomePage";
 import { NotFoundPage } from "app/pages/NotFoundPage";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      {/* <Route path="/home/*" element={<HomeRoutes />} /> */}
+      <Route path="/" element={<MainLayout />}>
+        {/* <Route path="/home/*" element={<HomeRoutes />} /> */}
+        <Route path="/home" element={<HomePage />} />
+
+        <Route path="/" element={<Navigate to="/home" replace />} />
+      </Route>
       {/* <Route path="/" element={<MainLayout />}> */}
       {/* <Route path="/events/*" element={<EventRoutes />} />
   
@@ -26,7 +29,6 @@ const Router = () => {
   
           <Route path="/notification/*" element={<NotificationRoutes />} /> */}
 
-      {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
       {/* </Route> */}
 
       <Route path="/auth" element={<AuthLayout />}>
