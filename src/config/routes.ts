@@ -1,0 +1,42 @@
+export const routesMap = [
+  {
+    path: "/home",
+    regex: /^\/home\/?$/,
+    title: "Home",
+    icon: "",
+    activeIcon: "",
+    subRoutes: [],
+  },
+  {
+    path: "/search",
+    regex: /^\/search\/?$/,
+    title: "Search",
+    icon: "",
+    activeIcon: "",
+    subRoutes: [],
+  },
+  {
+    path: "/notifications",
+    regex: /^\/notifications\/?$/,
+    title: "Notifications",
+    icon: "",
+    activeIcon: "",
+    subRoutes: [],
+  },
+  {
+    path: "/bookmark",
+    regex: /^\/bookmark\/?$/,
+    title: "bookmark",
+    icon: "",
+    activeIcon: "",
+    subRoutes: [],
+  },
+  {
+    path: "/profile",
+    regex: /^\/profile\/?$/,
+    title: "Profile",
+    icon: "",
+    activeIcon: "",
+    subRoutes: [],
+  },
+];
